@@ -20,32 +20,37 @@
     font-style: italic;
 }
 /* @font-face rule */
-body {font-family: TexGyreAdventor;font-size: 15px;line-height: 1.6;}
+body {font-family: TexGyreAdventor, Arial, sans-serif;font-size: 14px;line-height: 1.7;cursor: default;letter-spacing: 1px;}
 main {margin: 15px;}
-h1, h2, h3, h4, h5, h6 {font-weight: bold;}
-h2, h3, h4, h5, h6 {margin: 10px 0;}
-h1 {font-size: 30px;}
-h2 {font-size: 25px;}
-h3 {font-size: 20px;}
-h4 {font-size: 19px;}
-h5 {font-size: 18px;}
-h6 {font-size: 17px;}
+h1, h2, h3, h4, h5, h6 {font-weight: bold;margin: 5px 0;}
+h1 {font-size: 25px;}
+h2 {font-size: 23px;}
+h3 {font-size: 21px;}
+h4 {font-size: 18px;}
+h5 {font-size: 16px;}
+h6 {font-size: 14px;}
 
  .line {
     border-bottom: 1px solid black;
     width: 98%;
     height: 1px;
-    margin: 10px auto;
+    margin: 5px auto;
 }
+/* clearfix */
+.clearfix {
+    clear: both;
+}
+/* clearfix */
 /* Navbar Style */
 nav {
+    padding: 10px 0;
     margin: 0 auto 20px auto;
     font-weight: bold;
-    font-variant-caps: all-petite-caps;
+    text-transform: uppercase;
 }
 
-nav h1 {margin-left: 20px; display: inline-block;}
-nav a {font-size: 25px; text-decoration: none;color: black;}
+nav a.main-header {font-size: 26px;margin-left: 20px;letter-spacing: 2px;}
+nav a {font-size: 21px; text-decoration: none;color: black;letter-spacing: 1px;}
 
 nav li{
     float: right;
@@ -58,31 +63,107 @@ nav#home a, nav#home{
     margin: 0 auto 0 auto;
 
 }
+nav#home a.main-header {margin-left: 20px;}
 
-@media screen and (max-width: 800px){
-    nav .resnav {display: table;margin: 0 auto;}
-    nav h1 {display: block;text-align: center;margin: 0px;}
-}
 /* Navbar style */
+div.container {
+    width: 94%;
+    margin: 0 auto;
+}
+p.title, a.title {
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+div.content {
+    width: 65%;
+    float: left;
+}
+
+div.side-content {
+    width: 35%;
+    float: right;
+}
+div.side-content img {
+    width: 100%;
+    padding: 25px 0 0 20%;
+    box-sizing: border-box;
+}
+
+div.two-col {
+    width: 50%;
+    float: left;
+    padding-right: 10px;
+    box-sizing: border-box;
+}
+
 header {
     text-align: center;
 }
 
-
-@media screen and (max-width: 800px){
-    article h2 {text-align: center;}
+div.content section p.paragraph-1 {
+    text-align: justify;
+    margin-top: 20px;
+    margin-bottom: 70px;
 }
+
+div.project-gallery {
+    width: 31.3333333333%;
+    margin: 1%;
+    float: left;
+    box-shadow: 0 0 6px 1px rgba(128, 128, 128, 0.3);
+}
+div.project-gallery img {
+    font-weight: bold;
+    font-size: 20px;
+    background-color: lightgrey;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    height: 200px;
+    line-height: 200px;
+    white-space: nowrap;
+}
+div.project-gallery div.description {padding: 5px;background-color: white;}
+
 
 /* Footer style */
 footer{
     width: 100%;
     padding: 10% 0;
+    margin-top: 172px;
     background-color: black;
     color: white;
 }
-footer .socialaddress {display: table;margin: 10px auto;}
-footer li {display: inline;margin: 0 10px;}
-footer a {color: inherit; text-decoration: none;text-align: center;}
-
+footer ul {display: block;text-align: center;}
+footer li {display: inline-block;margin: 0 10px;}
 footer p {font-size: 15px;font-weight: bold;text-align: center;margin: 10px auto;}
 /* Footer style */
+
+/* responsive */
+@media screen and (max-width: 1000px) {
+    div.project-gallery {
+        width: 48%;
+    }   
+}
+@media screen and (max-width: 800px){
+    nav .resnav {display: table;margin: 0 auto;}
+    nav a.main-header {display: block;text-align: center;margin-left: 0;}
+    nav#home a.main-header {display: block;text-align: center;margin-left: 0;}
+    article h2, article section p, article section a.title {display:block;text-align: center;}
+    div.side-content {display: none;}
+    div.project-gallery {width: 48%;}
+    div.container {width: 98%;}
+    div.two-col, div.content, div.side-content {width: 100%;}
+}
+@media screen and (max-width: 600px){
+    nav .resnav {display: table;margin: 0 auto;}
+    nav a.main-header {display: block;text-align: center;margin-left: 0;}
+    nav#home a.main-header {display: block;text-align: center;margin-left: 0;}
+    article h2 {text-align: center;}
+    div.project-gallery {width: 98%;}
+    div.container {width: 98%;}
+}
+/* responsive */
