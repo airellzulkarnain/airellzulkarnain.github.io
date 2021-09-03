@@ -240,6 +240,7 @@ footer ul li a img {
     div.container {width: 98%;}
     div.two-col, div.content, div.side-content {width: 100%;}
     div.profile-photo img{display: none;}
+    div.short-bio div.content p + a {display: block; text-align: center;}
 }
 @media screen and (max-width: 600px){
     nav .resnav {display: table;margin: 0 auto;}
