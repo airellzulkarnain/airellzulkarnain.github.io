@@ -36,6 +36,10 @@ h6 {font-size: 14px;}
     height: 1px;
     margin: 5px auto;
 }
+div.separator {
+    margin: 30px auto 75px auto;
+    width: 94%;
+}
 /* clearfix */
 .clearfix {
     clear: both;
@@ -128,6 +132,79 @@ div.project-gallery img {
 }
 div.project-gallery div.description {padding: 5px;background-color: white;}
 
+div.container blockquote {
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    font-style: italic;
+}
+
+div.container blockquote + p {
+    text-align: center;
+    font-weight: bold;
+    font-size: 27px;
+}
+
+p.greeting {
+    font-weight: bold;
+    font-size: 23px;
+    text-align: center;
+}
+
+div.short-bio {
+    width: 60%;
+    margin: 0 auto;
+}
+
+div.short-bio h2 {
+    text-align: center;
+    margin-bottom: 4%;
+}
+
+div.profile-photo {
+    width: 35%;
+    float: left;
+}
+div.profile-photo img {
+    width: 100%;
+    padding: 2%;
+    padding-right: 15%;
+    box-sizing: border-box;
+}
+
+div.short-bio div.content p {
+    text-align: justify;
+}
+
+div.short-bio div.content p + a {
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: white;
+    border: 2px solid black;
+    padding: 18px;
+    margin: 10% 0;
+
+}
+
+div.short-bio div.content p + a:hover {
+    color: white;
+    background-color: black;
+
+}
+figure img {
+    width: 100%;
+    height: auto;
+    padding: 4%;
+    padding-bottom: 0;
+    box-sizing: border-box;
+}
+figure figcaption {
+    padding: 0 4%;
+    display: block;
+    text-align: justify;
+}
 
 /* Footer style */
 footer{
@@ -139,13 +216,18 @@ footer{
 }
 footer ul {display: block;text-align: center;}
 footer li {display: inline-block;margin: 0 10px;}
-footer p {font-size: 15px;font-weight: bold;text-align: center;margin: 10px auto;}
+footer p {font-size: 15px;font-weight: bold;text-align: center;margin: 10px auto;padding: 0 4%;}
+footer ul li a img {
+    width: 40px;
+    height: 40px;
+}
 /* Footer style */
 
 /* responsive */
 @media screen and (max-width: 1000px) {
     div.project-gallery {
         width: 48%;
+        margin: 2% 1%;
     }   
 }
 @media screen and (max-width: 800px){
@@ -154,7 +236,7 @@ footer p {font-size: 15px;font-weight: bold;text-align: center;margin: 10px auto
     nav#home a.main-header {display: block;text-align: center;margin-left: 0;}
     article h2, article section p, article section a.title {display:block;text-align: center;}
     div.side-content {display: none;}
-    div.project-gallery {width: 48%;}
+    div.project-gallery {width: 48%;margin: 2% 1%;}
     div.container {width: 98%;}
     div.two-col, div.content, div.side-content {width: 100%;}
 }
@@ -165,5 +247,19 @@ footer p {font-size: 15px;font-weight: bold;text-align: center;margin: 10px auto
     article h2 {text-align: center;}
     div.project-gallery {width: 98%;}
     div.container {width: 98%;}
+    div.container blockquote {
+        font-size: 23px;
+    }
+    div.container blockquote + p {
+        font-size: 20px;
+    }
+    div.short-bio {width: 90%;}
+    p.greeting {font-size: 20px;}
+    div.profile-photo img{display: none;}
+    div.short-bio div.content p + a {display: block; text-align: center;}
+    div.separator {
+        margin: 25px auto 25px auto;
+        width: 70%;
+    }
 }
 /* responsive */
