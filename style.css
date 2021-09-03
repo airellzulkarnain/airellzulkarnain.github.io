@@ -229,7 +229,6 @@ footer ul li a img {
         width: 48%;
         margin: 2% 1%;
     }
-    div.side-content {display: none;}
 }
 @media screen and (max-width: 800px){
     nav .resnav {display: table;margin: 0 auto;}
@@ -240,6 +239,7 @@ footer ul li a img {
     div.project-gallery {width: 48%;margin: 2% 1%;}
     div.container {width: 98%;}
     div.two-col, div.content, div.side-content {width: 100%;}
+    div.profile-photo img{display: none;}
 }
 @media screen and (max-width: 600px){
     nav .resnav {display: table;margin: 0 auto;}
