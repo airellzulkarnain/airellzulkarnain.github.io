@@ -118,6 +118,7 @@ div.project-gallery {
     margin: 1%;
     float: left;
     box-shadow: 0 0 6px 1px rgba(128, 128, 128, 0.3);
+    height: 280px;
 }
 div.project-gallery img {
     font-weight: bold;
