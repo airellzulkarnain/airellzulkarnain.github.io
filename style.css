@@ -210,10 +210,11 @@ figure figcaption {
 /* Footer style */
 footer{
     width: 100%;
-    padding: 10% 0;
+    padding: 2%;
     margin-top: 172px;
     background-color: black;
     color: white;
+    box-sizing: border-box;
 }
 footer ul {display: block;text-align: center;}
 footer li {display: inline-block;margin: 0 10px;}
