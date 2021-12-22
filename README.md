@@ -13,7 +13,7 @@ technology used for this project :
 - CSS
 
 
-\ncheckout my social media 
-\ninstagram   : https://www.instagram.com/airell_zulkarnain/
-\nTwitter     : https://www.twitter.com/airellportfolio/
-\nBlog        : https://airellzulkarnain.blogspot.com/
+<br/><h1>checkout my social media </h1>
+<br/>instagram   : https://www.instagram.com/airell_zulkarnain/
+<br/>Twitter     : https://www.twitter.com/airellportfolio/
+<br/>Blog        : https://airellzulkarnain.blogspot.com/
